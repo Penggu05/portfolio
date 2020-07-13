@@ -1,0 +1,980 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans:wght@600;700&family=Nunito:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans:wght@400;600;700&family=Nunito:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Raleway&display=swap');
+* {
+    // margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+        
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duration='4000']{
+    transition-duration: 4000ms;
+    }
+html{
+    scroll-behavior: smooth !important;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.container{
+
+    padding: 0 100px 0 100px;
+}
+.main-info-sec{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.workcateg{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body{
+    background-color: #000000;
+    // background-image: url("../../assets/JOSEPHINE_32.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+  
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+// .container-navbar{
+//     /* background-color: rgb(34, 33, 33);
+//     .
+//     .
+//      */
+// }
+
+li{
+    list-style: none;
+    margin-left: 25px;
+}
+
+header h1, header a, .text p, .about h1, .skills h1, .conrecog, .work h1{
+    color: rgb(231, 231, 231);
+}
+
+
+.myworks1{
+    position: relative;
+    width: 50%;
+    // background-color: red;
+}
+.myworks1 img{
+    width: 450px;
+    margin-top: 50px;
+}
+.myworks2{
+    position: relative;
+    // background-color: blue;
+    width: 50%;
+    left: 55%;
+    bottom: 27%;
+}
+.myworks2 img{
+    width: 450px;
+    margin-top: 50px;
+    // position: relative;
+    // left: 60%;
+    // bottom: 20%;
+}
+.main-info-sec{
+    height: calc(100vh - 81.6px);
+}
+
+.text{
+    margin-top: 120px;
+}
+.res2{
+    display: none;
+}
+
+.text h1{
+    color: white;
+    font-size: 3rem;
+    cursor: context-menu;
+}
+.text span{
+    display: inline-block;
+}
+
+span:hover{
+    color: lightgreen;
+    transition: all .5s;
+}
+
+span.name{
+    color: red;
+}
+
+.text p {
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: .8rem;
+}
+
+.text a{
+    padding: 12px 25px;
+    background-color: none;
+    border: 3px solid pink;
+    color: pink;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    position: relative;
+    top: 80px;
+    overflow: hidden;
+    transition: .5s;
+    display: inline-block;
+}
+.text a:hover{
+    color: rosybrown;
+}
+
+.text a::before{
+    content: '';
+    background-color: pink;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+
+.text a:hover::before{
+    height: 100;
+}
+.profile-image{
+    position: relative;
+    // background-color: midnightblue;
+    bottom: 10%;
+}
+
+.profile-image img{
+    width: 450px;
+    margin-top: 50px;
+}
+
+.about{
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.about h1{
+    font-size: 10rem;
+    z-index: 0;
+    
+    opacity: .1;
+
+}
+.conrecog{
+    font-size: 8rem;
+    z-index: 0;
+    opacity: .1;
+    text-align: left;
+
+}
+.work h1{
+    font-size: 8rem;
+    z-index: 0;
+    opacity: .1;
+
+}
+
+.container-aboutme-info{
+    max-width: 900px;
+    background-color: rgb(80, 80, 80);
+    box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+    padding: 50px;
+    position: relative;
+    top: -70px;
+    // left: 50%;
+    right: -30px;
+    // transform: translateX(-50%);
+    // z-index: 1;
+}
+.container-aboutme-info p{
+    font-size: 1.3rem;
+    color: #BEBEBE;
+}
+
+.container-aboutme-info p:nth-child(2), .about-me-info p:last-child{
+    margin-top: 30px;
+}
+
+.recognitions{
+    height: 100vh;
+}
+
+.work{
+    height: 140vh;
+}
+.work h1{
+    text-align: left;
+    font-size: 10rem;
+    opacity: .1; 
+}
+.work-info{
+    font-size: 1.4rem;
+    color: #fffefe;
+    max-width: 800px;
+    position: relative;
+    // top: 10%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skills{
+    height: 120vh;
+}
+.iskills{
+    position: relative;
+    left: 26%;
+    right: 10%;
+    // background-color: blue;
+    width: 80%;
+}
+
+.skills h1{
+    text-align: right;
+    font-size: 10rem;
+    opacity: .1;
+    
+}
+.skills p {
+    color: #fffefe;
+    padding-right: 20px;
+    margin-top: 7px;
+}
+.skills-info{
+    font-size: 1.4rem;
+    color: #fffefe;
+    max-width: 800px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.skills h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.skills li{
+    margin: 20px 0;
+
+}
+.bar{
+    background: #353b48;
+    display: block;
+    left: 50%;
+    width: 60%;
+    height: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    
+     box-shadow: 0 0 10px #a3a3a3b3;
+}
+.bar span{
+    height: 10px;
+    float: left;
+    left: 20%;
+    background: #a7a7a7;
+
+}
+.mo{
+    width: 90%;
+    animation: mo 6s;
+}
+.html{
+    width: 90%;
+    animation: html 6s;
+}
+.css{
+    width: 75%;
+    animation: css 6s;
+}
+.java{
+    width: 60%;
+    animation: java 6s;
+}
+.vb{
+    width: 85%;
+    animation: vb 6s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes mo{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes vb{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+
+
+.bar-html, .bar-css, .bar-java, .bar-vb{
+    width: calc(0 - 6px);
+}
+// @media screen and (max-width:959px){
+//     .container{
+//         width: 100%;
+//     }
+//     *{
+//         width: 100%;
+//     }
+//     .container-aboutme-info{
+//         width: 100%;
+
+//     }
+//     .container-aboutme-info p{
+//         width: 100%;
+//         font-size: .9rem;
+        
+//     }
+//     .main-info-sec{
+//         width: 100%;
+//     }
+//     img{
+//         width:100%;
+//     }
+// }
+// nav ul li a{
+//     display: inline-block;
+// }
+
+nav{
+
+    height: 80px;
+    width: 100%;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: left;
+    line-height: 70px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+nav ul {
+    float: right;
+    margin-right: 80px;
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 1px;
+    margin: 0 15px;
+}
+.container-navbar a:hover{
+   opacity: .5;
+    text-decoration: none;
+ }
+.parallax-container{
+    position: relative;
+    width: 103.1%;
+    align-content: center;
+    right: 2%;
+}
+.parallax{
+    background-image: url("../../assets/bgpic2.png");
+
+    /* Set a specific height */
+    min-height: 800px; 
+    width: 100%;
+    right: 10%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  @media (max-width:345){
+      .skills h1{
+          right: 80%;
+          position: relative;
+        // text-align: right;
+      
+    font-size: 6rem;
+    opacity: .1;
+      }
+      .work h1{
+          position: relative;
+        text-align: left;
+        font-size: 2rem;
+        opacity: .1;
+    
+        
+    }
+    .work{
+        background-color: mediumspringgreen;
+    }
+    
+  }
+  @media (max-width:380px){
+    body{
+        background-color: #000000;
+    // background-image: url("../../assets/JOSEPHINE_32.png");
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: left 50% top 130px;
+  
+    }
+    .profile-image{
+        display: none;
+    }
+    ul{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        top: 20px;
+        left: -100%;
+        text-align: center;
+        // background-color: gray;
+        
+        transition: all .5s;
+    }
+    .work{
+        height: 120vh;
+    }
+    .myworks1{
+        position: relative;
+        width: 50%;
+        left: -40%;
+        bottom: 50px;        // background-color: red;
+    }
+    .myworks1 img{
+        width: 300px;
+        margin-top: 50px;
+    }
+    .myworks2{
+        position: relative;
+        // background-color: blue;
+        width: 50%;
+        // left: 55%;
+        left: -40%;
+      
+        bottom: 50px;
+    }
+    .myworks2 img{
+        width:300px;
+        margin-top: 50px;
+        // position: relative;
+        // left: 60%;
+        // bottom: 20%;
+    }
+    .work-info{
+        font-size: 1rem;
+        color: #fffefe;
+        max-width: 800px;
+        position: relative;
+        // background-color: green;
+        width: 300px;
+        top: 10px;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+   
+    .container-navbar a:hover{
+        // color: rgb(209, 1, 1);
+        text-decoration: none;
+     }
+    nav ul li{
+        display: block;
+        margin: 0 5px;
+        line-height: 75px;
+    }
+    nav ul li a{
+        font-size: -2px;
+    }
+    .container-navbar h1{
+        font-size: 2px;
+    }
+    .main-info-sec{
+        // background-color: green;
+    }
+    .profile-image{
+        // background-color: green;
+        position: absolute;
+        height: .1px;
+    }
+    .text h1{
+        font-size: 10px;
+        top: 20%;
+        width: 100%;
+        right: 23%;
+
+    }
+    .text{
+        // background-color: red;
+        position: relative;
+        top: 30%;
+       width: 100%;
+        height: 40%;
+        // right: 30%;
+        left: -20%;
+    }
+    .text p{
+        font-size: 10px;
+        // width: 300px;
+    }
+    .container-aboutme-info{
+        max-width: 900px;
+        // background-color: rgb(80, 80, 80);
+        
+        box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+        padding: 50px;
+        position: relative;
+        width: 550px;
+        top: 10px;
+        left: 50%;
+        // left: -300px;
+        // right:  200%;
+        // transform: translateX(-50%);
+        // z-index: 1;
+    }
+    .about{
+        // height: 160vh;
+        position: relative;
+        bottom: 50%;
+    width: 100%;
+    // background-color: maroon;
+    }
+    .about h1{
+        // background-color: blue;
+        position: relative;
+     top: -20%;
+     left: -50%;
+    font-size: 6rem;
+ 
+    opacity: .3;
+    }
+    .skills{
+        // background-color: maroon;
+    }
+    .skills-info{
+        font-size: 15px;
+        // background-color: mediumaquamarine;
+        left: 50%;
+        width: 300px;
+    }
+    .skills h1{
+        position: relative;
+        // text-align: right;
+        
+        right: 40%;
+    font-size: 6rem;
+    opacity: .3;
+    }
+    .iskills{
+        position: relative;
+    left: 5%;
+    right: 80%;
+    // background-color: blue;
+    width:100%;
+    // background-color: mediumorchid;
+    }
+    .bar{
+        background: #353b48;
+        display: block;
+        left: 50%;
+        width: 100%;
+        height: 10px;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 3px;
+        overflow: hidden;
+        
+         box-shadow: 0 0 10px #a3a3a3b3;
+    }
+    .bar span{
+        height: 10px;
+        float: left;
+        left: 20%;
+        background: #a7a7a7;
+    
+    }
+    .conrecog{
+        position: relative;
+        // background-color: midnightblue;
+        height: 100px;
+    }
+    .conrecog{
+        display: none;
+ 
+    opacity: .2;
+    }
+    .res2{
+        display: inline-block;
+        position: relative;
+        font-size: 5.5rem;
+        right: 90px;
+    }
+    .work h1{
+        position: relative;
+        text-align: left;
+        font-size: 5.5rem;
+        opacity: .3;
+    }
+}
+@media (max-width: 952px){
+    nav ul li a{
+        font-size: 13px;
+    }
+    .container-navbar h1{
+        font-size: 1.3rem;
+    }
+}
+// maxwidth 858px
+@media (max-width:858px){
+    body{
+        background-color: #000000;
+    background-image: url("../../assets/JOSEPHINE_32.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: left 50% top 150px;
+  
+    }
+    html, body{
+        
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    .main-info-sec{
+        top: 20%;
+    }
+    .profile-image img{
+        width: 300px;
+        margin-top: 50px;
+    }
+ .checkbtn{
+     display: block;
+    }
+ .container-navbar h1{
+     display: none;
+    }
+ ul{
+     position: relative;
+     width: 100%;
+     height: 30vh;
+     top: 20px;
+     left: -100%;
+     text-align: center;
+     background-color: gray;
+     
+     transition: all .5s;
+ }
+
+ nav ul li{
+     display: block;
+     margin: 0 5px;
+     line-height: 60px;
+ }
+ #check:checked ~ ul{
+     left: 0;
+ }
+ nav ul {
+    float: right;
+    margin-right: 20px;
+    
+    }
+
+    .about{
+    height: 155vh;
+    width: 100%;
+    
+    }
+ .about h1{
+     position: relative;
+     top: -1%;
+     left: -50%;
+    font-size: 9rem;
+    z-index: 0;
+    opacity: .3;
+
+    }
+ .text h1{
+    font-size: 85px;
+
+    }
+    .text{
+    // background-color: red;
+    position: relative;
+    top: 30%;
+    width: 100%;
+    right: 30%;
+    }
+.profile-image{
+    
+    right:30%;
+    top: 80%;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+margin-top: 1px;
+}
+
+.about{
+    height: 100vh;
+    width: 100%;
+    
+}
+ .container-aboutme-info{
+    max-width: 900px;
+    // background-color: rgb(80, 80, 80);
+    
+    box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+    padding: 50px;
+    position: relative;
+    width: 550px;
+    top: 10px;
+    left: 60%;
+    right: 50%;
+    // transform: translateX(-50%);
+    // z-index: 1;
+}
+.container-aboutme-info p{
+    // bottom: 20%;
+    // background-color: red;
+    font-size: 1rem;
+    color: #BEBEBE;
+}
+nav ul li a{
+    font-size: 20px;
+}
+
+}
+
+
+@media  (max-width:415px){
+    
+    body{
+        background-color: #000000;
+    // background-image: url("../../assets/JOSEPHINE_32.png");
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: left 50% top 150px;
+  
+    }
+    html, body{
+        
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    .profile-image{
+        display: none;
+    }
+    .main-info-sec{
+        // background-image: url("../../assets/JOSEPHINE_31.png");
+        
+    }
+    .text h1{
+        font-size: 40px;
+        width: 350px;
+       
+
+    }
+    .text{
+        // background-color: red;
+        position: relative;
+        top: 35%;
+        width: 100%;
+        left: -25%;
+    }
+    .text p{
+        font-size: 10px;
+        width: 300px;
+    }
+    .profile-image{
+        
+        
+        width: 100%;
+  height: 400px;
+//   background-image: url("../../assets/JOSEPHINE_31.png");
+    // margin-top: 1px;
+    }
+   
+    .about h1{
+        position: relative;
+        top: 8%;
+        left: -50%;
+       font-size: 6rem;
+       z-index: 0;
+       opacity: .3;
+    
+    }
+    .about{
+        height: 100vh;
+        width: 100%;
+        
+    }
+    .container-aboutme-info{
+        max-width: 500px;
+        background-color: rgb(80, 80, 80);
+        // background-color: pink;
+        box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+        padding: 50px;
+        position: relative;
+        width: 80vw;
+        height: 55vh;
+        top: 30px;
+        // left: -60%;
+        left: -60px;
+        // left: -300px;
+        // transform: translateX(-50%);
+        // z-index: 1;
+        // left: 85px;
+    }
+    .container-aboutme-info p{
+        bottom: 20%;
+        font-size: 11px;
+        color: #BEBEBE;
+    }
+    .skills{
+        // background-color: maroon;
+    }
+    .skills-info{
+        font-size: 15px;
+        // background-color: mediumaquamarine;
+        left: 55%;
+        width: 300px;
+    }
+    .skills h1{
+        position: relative;
+        text-align: right;
+        right: 30%;
+    font-size: 6rem;
+    opacity: .3;
+    }
+    .iskills{
+        position: relative;
+    left: 5%;
+    right: 80%;
+    // background-color: blue;
+    width:100%;
+    // background-color: mediumorchid;
+    }
+    .work h1{
+        position: relative;
+        text-align: left;
+        right: 60%;
+        font-size: 6rem;
+        opacity: .3;
+    }
+    .myworks1{
+        position: relative;
+        width: 50%;
+        left: -40%;
+        bottom: 50px;        // background-color: red;
+    }
+    .myworks1 img{
+        width: 300px;
+        margin-top: 50px;
+    }
+    .myworks2{
+        position: relative;
+        // background-color: blue;
+        width: 50%;
+        // left: 55%;
+        left: -40%;
+      
+        bottom: 50px;
+    }
+    .myworks2 img{
+        width:300px;
+        margin-top: 50px;
+        // position: relative;
+        // left: 60%;
+        // bottom: 20%;
+    }
+    .bar{
+        background: #353b48;
+        display: block;
+        left: 50%;
+        width: 100%;
+        height: 10px;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 3px;
+        overflow: hidden;
+        
+         box-shadow: 0 0 10px #a3a3a3b3;
+    }
+    .bar span{
+        height: 10px;
+        float: left;
+        left: 20%;
+        background: #a7a7a7;
+    
+    }
+}
+

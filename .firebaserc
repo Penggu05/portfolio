@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "josephine-portfolio": {
+      "hosting": {
+        "portfolio": [
+          "josephine-portfolio"
+        ]
+      }
+    }
+  }
+}
